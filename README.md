@@ -1,4 +1,6 @@
 #  :book: tipograf
+[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Ftipograf.svg)](https://badge.fury.io/gh/mightyCrow%2Ftipograf)
+[![npm version](https://badge.fury.io/js/tipograf.svg)](https://badge.fury.io/js/tipograf)
 
 **tipograf** is a Lightweight typography base written in pure CSS using [PostCSS](http://postcss.org/). It is heavily inspired by [Medium](https://medium.com/) and tries to **enforce good vertical rhythm**. It is **written entirely in relative units** and is lightweight, with the **minified version being just 712 bytes when gzipped** :scream:.
 
