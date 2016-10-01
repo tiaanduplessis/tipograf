@@ -1,0 +1,25 @@
+{
+  "name": "tipograf",
+  "description": "Lightweight pure CSS typography base for your next project",
+  "main": "dist/tipograf.css",
+  "authors": [
+    "Tiaan du Plessis @mightyCrow"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "tipograf",
+    "pure",
+    "CSS",
+    "typography",
+    "base",
+    "lightweight"
+  ],
+  "homepage": "https://github.com/mightyCrow/tipograf",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
