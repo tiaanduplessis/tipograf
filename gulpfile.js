@@ -76,6 +76,9 @@ gulp.task('styles', () => {
 
 gulp.task('styles:less', () => {
 	return gulp.src(paths.less)
+		.pipe($.header(banner, {
+            pkg
+        }))
 		.pipe(gulp.dest(paths.output));
 });
 
