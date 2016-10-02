@@ -23,7 +23,9 @@ const paths = {
     output: 'dist/',
     input: `src/**/*.css`,
     less: 'src/**/*.less',
-    testLess: 'test/less/'
+    test: {
+    	less: 'test/less'
+    }
 };
 
 // Default postcss plugins
@@ -80,7 +82,7 @@ gulp.task('styles:less', () => {
 gulp.task('test:less', () => {
 	return gulp.src(paths.less)
 		.pipe(less())
-		.pipe(gulp.dest(paths.testLess));
+		.pipe(gulp.dest(paths.test.less));
 });
 
 gulp.task('build', ['styles', 'styles:minified', 'styles:less'])
