@@ -5,6 +5,8 @@ const del = require('del');
 const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
 const reload = browserSync.reload;
+const less = require('gulp-less');
+
 // Pretty banner
 const banner = ['/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
@@ -19,7 +21,11 @@ const banner = ['/**',
 // Default paths
 const paths = {
     output: 'dist/',
-    input: `src/**/*.css`
+    input: `src/**/*.css`,
+    less: 'src/**/*.less',
+    test: {
+    	less: 'test/less'
+    }
 };
 
 // Default postcss plugins
@@ -68,7 +74,21 @@ gulp.task('styles', () => {
         .pipe(gulp.dest(paths.output))
 })
 
-gulp.task('build', ['styles', 'styles:minified'])
+gulp.task('styles:less', () => {
+	return gulp.src(paths.less)
+		.pipe($.header(banner, {
+            pkg
+        }))
+		.pipe(gulp.dest(paths.output));
+});
+
+gulp.task('test:less', () => {
+	return gulp.src(paths.less)
+		.pipe(less())
+		.pipe(gulp.dest(paths.test.less));
+});
+
+gulp.task('build', ['styles', 'styles:minified', 'styles:less'])
 
 gulp.task('watch', () => {
     gulp.watch(paths.input, ['clean', 'build'])
