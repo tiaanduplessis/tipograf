@@ -1,7 +1,7 @@
 {
   "name": "tipograf",
-  "version": "1.0.0",
-  "description": "Lightweight pure CSS typography base for your next project",
+  "version": "1.0.1",
+  "description": "Lightweight CSS typography base for your next project",
   "main": "dist/tipograf.css",
   "scripts": {
     "test": "echo nope",
@@ -18,6 +18,9 @@
     "typography",
     "base",
     "lightweight"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Tiaan du Plessis @mightyCrow",
   "homepage": "https://github.com/mightyCrow/tipograf",

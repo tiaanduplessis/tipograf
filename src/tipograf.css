@@ -1,96 +1,91 @@
 :root {
-	--base-font-size:  18;
-	--base-font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-	--base-line-height: 1.5;
-	--base-font-weight: 400;
-	--base-letter-spacing: -.004em;
-	--header-font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
-	--header-font-weight: 700;
-	--header-scale: 1.67;
-  	--leading-space: calc(var(--base-line-height) * 1rem);
+  --base-font-size: 18;
+  --base-font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  --base-line-height: 1.5;
+  --base-font-weight: 400;
+  --base-letter-spacing: -.004em;
+  --header-font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  --header-font-weight: 700;
+  --header-scale: 1.67;
+  --leading-space: calc(var(--base-line-height) * 1rem);
 }
 
 html {
-	font-family: var(--base-font-family);
-	font-size: calc(var(--base-font-size) / 16 * 100%);
-	font-weight: var(--base-font-weight);
-	font-style: normal;
-	color: rgba(0,0,0,.8);
-	line-height: var(--base-line-height);
-	-webkit-font-smoothing: antialiased;
-	text-size-adjust: auto;
+  font-family: var(--base-font-family);
+  font-size: calc(var(--base-font-size) / 16 * 100%);
+  font-weight: var(--base-font-weight);
+  font-style: normal;
+  color: rgba(0, 0, 0, .8);
+  line-height: var(--base-line-height);
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--header-font-family);
-	font-weight: var(--header-font-weight);
-	letter-spacing: calc(var(--base-letter-spacing) / 2);
-	margin-bottom: 0;
+  font-family: var(--header-font-family);
+  font-weight: var(--header-font-weight);
+  letter-spacing: calc(var(--base-letter-spacing) / 2);
+  line-height: calc(.8 * var(--base-line-height));
+  margin-bottom: 0;
 }
 
 h1 {
-	font-size: calc(2.5 * var(--header-scale) * 1rem);
-	line-height: calc(2.3 * var(--leading-space));
-	margin-top: calc(2 * var(--leading-space));
+  font-size: calc(2.5 * var(--header-scale) * 1rem);
+  margin-top: calc(2 * var(--leading-space));
 }
 
 h2 {
-	font-size: calc(2.2 * var(--header-scale) * 1rem);
-	line-height: calc(2 * var(--leading-space));
-	margin-top: calc(1.8 * var(--leading-space));
+  font-size: calc(2.2 * var(--header-scale) * 1rem);
+  margin-top: calc(1.8 * var(--leading-space));
 }
 
 h3 {
-	font-size: calc(1.7 * var(--header-scale) * 1rem);
-	line-height: calc(1.5 * var(--leading-space));
-	margin-top: calc(1.6 * var(--leading-space));
+  font-size: calc(1.7 * var(--header-scale) * 1rem);
+  margin-top: calc(1.6 * var(--leading-space));
 }
 
 h4 {
-	font-size: calc(1.5 * var(--header-scale) * 1rem);
-	line-height: calc(1.3 * var(--leading-space));
-	margin-top: calc(1.4 * var(--leading-space));
+  font-size: calc(1.5 * var(--header-scale) * 1rem);
+  margin-top: calc(1.4 * var(--leading-space));
 }
 
 h5 {
-	font-size: calc(1.3 * var(--header-scale) * 1rem);
-	line-height: calc(1.2 * var(--leading-space));
-	margin-top: calc(1.1 * var(--leading-space));
+  font-size: calc(1.3 * var(--header-scale) * 1rem);
+  margin-top: calc(1.1 * var(--leading-space));
 }
 
 h6 {
-	font-size: calc(var(--header-scale) * 1rem);
-	margin-top: calc(1.1 * var(--leading-space));
-	line-height: var(--leading-space);
+  font-size: calc(var(--header-scale) * 1rem);
+  margin-top: calc(1.1 * var(--leading-space));
 }
 
 p {
-	letter-spacing: var(--base-letter-spacing);
-	margin-top: var(--leading-space);
-	margin-bottom: 0;
+  letter-spacing: var(--base-letter-spacing);
+  margin-top: var(--leading-space);
+  margin-bottom: 0;
 }
 
 ul, ol {
-	margin-top: var(--leading-space);
-	margin-bottom: var(--leading-space);
-	ul, ol {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+  margin-top: var(--leading-space);
+  margin-bottom: var(--leading-space);
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 table {
-	margin-top: var(--leading-space);
-	border-spacing: 0;
-	border-collapse: collapse;
-	td, th {
-		padding: 0;
-	}
+  margin-top: var(--leading-space);
+  border-spacing: 0;
+  border-collapse: collapse;
+  td, th {
+    padding: 0;
+  }
 }
 
 blockquote {
-	margin-top: var(--leading-space);
-	margin-bottom: var(--leading-space);
+  margin-top: var(--leading-space);
+  margin-bottom: var(--leading-space);
 }
 
 code {
