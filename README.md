@@ -10,7 +10,7 @@
 ## :scream: Highlights
 - Written entirely in relative units.
 - Highly customizable.
-- Lightweight(**minified version being just 712 bytes when gzipped**)
+- Lightweight(**minified version being just 671 bytes when gzipped**)
 
 ## Install
 **Install with cdn**

@@ -79,21 +79,23 @@ ul, ol {
   margin-top: 27px;
   margin-top: 1.5rem;
   margin-bottom: 27px;
-  margin-bottom: 1.5rem;
-  ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  margin-bottom: 1.5rem
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 table {
   margin-top: 27px;
   margin-top: 1.5rem;
   border-spacing: 0;
-  border-collapse: collapse;
-  td, th {
-    padding: 0;
-  }
+  border-collapse: collapse
+}
+
+table td, table th {
+  padding: 0;
 }
 
 blockquote {

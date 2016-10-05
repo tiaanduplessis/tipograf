@@ -68,7 +68,7 @@ p {
 ul, ol {
   margin-top: var(--leading-space);
   margin-bottom: var(--leading-space);
-  ul, ol {
+  & ul, & ol {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -78,7 +78,7 @@ table {
   margin-top: var(--leading-space);
   border-spacing: 0;
   border-collapse: collapse;
-  td, th {
+  & td, & th {
     padding: 0;
   }
 }
