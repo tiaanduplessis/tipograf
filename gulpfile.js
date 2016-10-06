@@ -6,6 +6,7 @@ const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
 const reload = browserSync.reload;
 const less = require('gulp-less');
+const sass = require('gulp-sass');
 
 // Pretty banner
 const banner = ['/**',
@@ -23,8 +24,10 @@ const paths = {
     output: 'dist/',
     input: `src/**/*.css`,
     less: 'src/**/*.less',
+    scss: 'src/**/*.scss',
     test: {
-    	less: 'test/less'
+    	less: 'test/less',
+      scss: 'test/scss',
     }
 };
 
@@ -82,13 +85,27 @@ gulp.task('styles:less', () => {
 		.pipe(gulp.dest(paths.output));
 });
 
+gulp.task('styles:scss', () => {
+  return gulp.src(paths.scss)
+    .pipe($.header(banner, {
+            pkg
+        }))
+    .pipe(gulp.dest(paths.output));
+});
+
 gulp.task('test:less', () => {
 	return gulp.src(paths.less)
 		.pipe(less())
 		.pipe(gulp.dest(paths.test.less));
 });
 
-gulp.task('build', ['styles', 'styles:minified', 'styles:less'])
+gulp.task('test:scss', () => {
+  return gulp.src(paths.less)
+    .pipe(sass())
+    .pipe(gulp.dest(paths.test.scss));
+});
+
+gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:scss'])
 
 gulp.task('watch', () => {
     gulp.watch(paths.input, ['clean', 'build'])
