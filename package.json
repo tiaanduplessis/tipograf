@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo nope",
     "test:less": "gulp test:less && opener ./test/less/index.html",
+    "test:sass": "gulp test:sass && opener ./test/sass/index.html",
     "build": "gulp build",
     "start": "gulp demo",
     "dev": "gulp",
@@ -23,6 +24,12 @@
     "dist"
   ],
   "author": "Tiaan du Plessis @mightyCrow",
+  "contributors":  [
+    { "name" : "Kasper Andersson"
+    , "email" : "hello@syvogfirs.dk"
+    , "url" : "http://syvogfirs.dk"
+    }
+  ],
   "homepage": "https://github.com/mightyCrow/tipograf",
   "license": "MIT",
   "devDependencies": {
@@ -37,6 +44,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
     "opener": "^1.4.2",
     "postcss-cssnext": "^2.8.0"

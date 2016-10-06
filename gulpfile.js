@@ -6,6 +6,7 @@ const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
 const reload = browserSync.reload;
 const less = require('gulp-less');
+const sass = require('gulp-sass');
 
 // Pretty banner
 const banner = ['/**',
@@ -23,8 +24,10 @@ const paths = {
     output: 'dist/',
     input: `src/**/*.css`,
     less: 'src/**/*.less',
+    sass: 'src/**/*.scss',
     test: {
-    	less: 'test/less'
+        less: 'test/less',
+    	sass: 'test/sass'
     }
 };
 
@@ -75,7 +78,15 @@ gulp.task('styles', () => {
 })
 
 gulp.task('styles:less', () => {
-	return gulp.src(paths.less)
+    return gulp.src(paths.less)
+        .pipe($.header(banner, {
+            pkg
+        }))
+        .pipe(gulp.dest(paths.output));
+});
+
+gulp.task('styles:sass', () => {
+	return gulp.src(paths.sass)
 		.pipe($.header(banner, {
             pkg
         }))
@@ -83,12 +94,18 @@ gulp.task('styles:less', () => {
 });
 
 gulp.task('test:less', () => {
-	return gulp.src(paths.less)
-		.pipe(less())
-		.pipe(gulp.dest(paths.test.less));
+    return gulp.src(paths.less)
+        .pipe(less())
+        .pipe(gulp.dest(paths.test.less));
 });
 
-gulp.task('build', ['styles', 'styles:minified', 'styles:less'])
+gulp.task('test:sass', () => {
+	return gulp.src(paths.sass)
+		.pipe(sass())
+		.pipe(gulp.dest(paths.test.sass));
+});
+
+gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:sass'])
 
 gulp.task('watch', () => {
     gulp.watch(paths.input, ['clean', 'build'])
