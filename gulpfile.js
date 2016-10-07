@@ -7,6 +7,7 @@ const pkg = require('./package.json');
 const reload = browserSync.reload;
 const less = require('gulp-less');
 const sass = require('gulp-sass');
+const stylus = require('gulp-stylus');
 
 // Pretty banner
 const banner = ['/**',
@@ -25,9 +26,11 @@ const paths = {
     input: `src/**/*.css`,
     less: 'src/**/*.less',
     sass: 'src/**/*.scss',
+    stylus: 'src/**/*.styl',
     test: {
-        less: 'test/less',
-    	sass: 'test/sass'
+      less: 'test/less',
+    	sass: 'test/sass',
+      stylus: 'test/stylus'
     }
 };
 
@@ -93,6 +96,14 @@ gulp.task('styles:sass', () => {
 		.pipe(gulp.dest(paths.output));
 });
 
+gulp.task('styles:stylus', () => {
+  return gulp.src(paths.stylus)
+    .pipe($.header(banner, {
+            pkg
+        }))
+    .pipe(gulp.dest(paths.output));
+});
+
 gulp.task('test:less', () => {
     return gulp.src(paths.less)
         .pipe(less())
@@ -105,7 +116,13 @@ gulp.task('test:sass', () => {
 		.pipe(gulp.dest(paths.test.sass));
 });
 
-gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:sass'])
+gulp.task('test:stylus', () => {
+  return gulp.src(paths.stylus)
+    .pipe(stylus())
+    .pipe(gulp.dest(paths.test.stylus));
+});
+
+gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:sass', 'styles:stylus'])
 
 gulp.task('watch', () => {
     gulp.watch(paths.input, ['clean', 'build'])
