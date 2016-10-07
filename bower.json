@@ -5,6 +5,12 @@
   "authors": [
     "Tiaan du Plessis @mightyCrow"
   ],
+  "contributors":  [
+    { "name" : "Kasper Andersson"
+    , "email" : "hello@syvogfirs.dk"
+    , "url" : "http://syvogfirs.dk"
+    }
+  ],
   "license": "MIT",
   "keywords": [
     "tipograf",

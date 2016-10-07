@@ -42,7 +42,8 @@ h6 {
 p {
   letter-spacing: -0.004em;
   margin-top: 1.5rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  max-width: 36em; }
 
 ul, ol {
   margin-top: 1.5rem;
