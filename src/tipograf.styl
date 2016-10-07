@@ -1,0 +1,93 @@
+tipograf-base-font-size = 18
+tipograf-base-font-family = medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif
+tipograf-base-line-height = 1.5
+tipograf-base-font-weight = 400
+tipograf-base-letter-spacing = -.004em
+tipograf-header-font-family = medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif
+tipograf-header-font-weight = 700
+tipograf-header-scale = 1.67
+tipograf-leading-space = tipograf-base-line-height * 1rem
+
+html
+  font-family tipograf-base-font-family
+  font-size tipograf-base-font-size / 16 * 100%
+  font-weight tipograf-base-font-weight
+  font-style normal
+  color rgba(0, 0, 0, 0.8)
+  line-height tipograf-base-line-height
+  font-smoothing antialiased
+  text-size-adjust auto
+
+
+h1, h2, h3, h4, h5, h6
+  font-family tipograf-header-font-family
+  font-weight tipograf-header-font-weight
+  letter-spacing tipograf-base-letter-spacing / 2
+  line-height tipograf-base-line-height * .8
+  margin-bottom 0
+
+
+h1
+  font-size 2.5 * tipograf-header-scale * 1rem
+  margin-top 2 * tipograf-leading-space
+
+
+h2
+  font-size 2.2 * tipograf-header-scale * 1rem
+  margin-top 1.8 * tipograf-leading-space
+
+
+h3
+  font-size 1.7 * tipograf-header-scale * 1rem
+  margin-top 1.6 * tipograf-leading-space
+
+
+h4
+  font-size 1.5 * tipograf-header-scale * 1rem
+  margin-top 1.4 * tipograf-leading-space
+
+
+h5
+  font-size 1.3 * tipograf-header-scale * 1rem
+  margin-top 1.1 * tipograf-leading-space
+
+
+h6
+  font-size tipograf-header-scale * 1rem
+  margin-top 1.1 * tipograf-leading-space
+
+
+p
+  letter-spacing tipograf-base-letter-spacing
+  margin-top tipograf-leading-space
+  margin-bottom 0
+
+
+ul, ol
+  margin-top tipograf-leading-space
+  margin-bottom tipograf-leading-space
+
+  ul, ol
+    margin-top 0
+    margin-bottom 0
+
+
+
+table
+  margin-top tipograf-leading-space
+  border-spacing 0
+  border-collapse collapse
+
+  td, th
+    padding 0
+
+
+
+blockquote
+  margin-top tipograf-leading-space
+  margin-bottom tipograf-leading-space
+
+
+code
+  vertical-align bottom
+
