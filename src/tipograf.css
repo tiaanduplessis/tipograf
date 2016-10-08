@@ -8,66 +8,69 @@
   --header-font-weight: 700;
   --header-scale: 1.67;
   --leading-space: calc(var(--base-line-height) * 1rem);
+  --max-line-length: 36em;
 }
 
 html {
-  font-family: var(--base-font-family);
-  font-size: calc(var(--base-font-size) / 16 * 100%);
+  color: rgba(0, 0, 0, .8);
   font-weight: var(--base-font-weight);
   font-style: normal;
-  color: rgba(0, 0, 0, .8);
+  font-size: calc(var(--base-font-size) / 16 * 100%);
+  font-family: var(--base-font-family);
   line-height: var(--base-line-height);
   -webkit-font-smoothing: antialiased;
   text-size-adjust: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font-family);
-  font-weight: var(--header-font-weight);
-  letter-spacing: calc(var(--base-letter-spacing) / 2);
-  line-height: calc(.8 * var(--base-line-height));
   margin-bottom: 0;
+  letter-spacing: calc(var(--base-letter-spacing) / 2);
+  font-weight: var(--header-font-weight);
+  font-family: var(--header-font-family);
+  line-height: calc(.8 * var(--base-line-height));
 }
 
 h1 {
-  font-size: calc(2.5 * var(--header-scale) * 1rem);
   margin-top: calc(2 * var(--leading-space));
+  font-size: calc(2.5 * var(--header-scale) * 1rem);
 }
 
 h2 {
-  font-size: calc(2.2 * var(--header-scale) * 1rem);
   margin-top: calc(1.8 * var(--leading-space));
+  font-size: calc(2.2 * var(--header-scale) * 1rem);
 }
 
 h3 {
-  font-size: calc(1.7 * var(--header-scale) * 1rem);
   margin-top: calc(1.6 * var(--leading-space));
+  font-size: calc(1.7 * var(--header-scale) * 1rem);
 }
 
 h4 {
-  font-size: calc(1.5 * var(--header-scale) * 1rem);
   margin-top: calc(1.4 * var(--leading-space));
+  font-size: calc(1.5 * var(--header-scale) * 1rem);
 }
 
 h5 {
-  font-size: calc(1.3 * var(--header-scale) * 1rem);
   margin-top: calc(1.1 * var(--leading-space));
+  font-size: calc(1.3 * var(--header-scale) * 1rem);
 }
 
 h6 {
-  font-size: calc(var(--header-scale) * 1rem);
   margin-top: calc(1.1 * var(--leading-space));
+  font-size: calc(var(--header-scale) * 1rem);
 }
 
 p {
-  letter-spacing: var(--base-letter-spacing);
   margin-top: var(--leading-space);
   margin-bottom: 0;
+  max-width:var(--max-line-length);
+  letter-spacing: var(--base-letter-spacing);
 }
 
 ul, ol {
   margin-top: var(--leading-space);
   margin-bottom: var(--leading-space);
+
   & ul, & ol {
     margin-top: 0;
     margin-bottom: 0;
@@ -78,6 +81,7 @@ table {
   margin-top: var(--leading-space);
   border-spacing: 0;
   border-collapse: collapse;
+
   & td, & th {
     padding: 0;
   }

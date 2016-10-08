@@ -17,37 +17,32 @@ h6 {
   font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: -0.002em;
+  line-height: 1.2;
   margin-bottom: 0;
 }
 h1 {
   font-size: 4.175rem;
-  line-height: 3.45rem;
   margin-top: 3rem;
 }
 h2 {
   font-size: 3.674rem;
-  line-height: 3rem;
   margin-top: 2.7rem;
 }
 h3 {
   font-size: 2.839rem;
-  line-height: 2.25rem;
   margin-top: 2.4rem;
 }
 h4 {
   font-size: 2.505rem;
-  line-height: 1.95rem;
   margin-top: 2.1rem;
 }
 h5 {
   font-size: 2.171rem;
-  line-height: 1.8rem;
   margin-top: 1.65rem;
 }
 h6 {
   font-size: 1.67rem;
   margin-top: 1.65rem;
-  line-height: 1.5rem;
 }
 p {
   letter-spacing: -0.004em;
@@ -81,4 +76,10 @@ blockquote {
 }
 code {
   vertical-align: bottom;
+}
+p,
+ul,
+ol,
+dl {
+  max-width: 36em;
 }
