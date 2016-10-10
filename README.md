@@ -36,9 +36,6 @@ $ npm install tipograf
 ## Demo
 Check out the demo [here](https://mightycrow.github.io/tipograf/).
 
-## TODO :memo:
-- Add **Stylus** version.
-
 ## Contributing
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
 
