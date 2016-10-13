@@ -30,6 +30,12 @@ $ bower install tipograf
 $ npm install tipograf
 ```
 
+**Install with yarn**
+
+```sh
+$ yarn add tipograf
+```
+
 ## Usage
 **tipograf** is **highly customizable** and should be changed to meet your preference :+1:.
 
