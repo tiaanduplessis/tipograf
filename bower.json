@@ -3,7 +3,7 @@
   "description": "Lightweight pure CSS typography base for your next project",
   "main": "dist/tipograf.css",
   "authors": [
-    "Tiaan du Plessis @mightyCrow"
+    "Tiaan du Plessis @tiaanduplessis"
   ],
   "contributors":  [
     { "name" : "Kasper Andersson"
@@ -20,7 +20,7 @@
     "base",
     "lightweight"
   ],
-  "homepage": "https://github.com/mightyCrow/tipograf",
+  "homepage": "https://github.com/tiaanduplessis/tipograf",
   "ignore": [
     "**/.*",
     "node_modules",

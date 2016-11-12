@@ -1,8 +1,8 @@
 /**
  * tipograf - Lightweight CSS typography base for your next project
  * @version v1.0.2
- * (c) 2016 Tiaan du Plessis @mightyCrow
- * @link https://github.com/mightyCrow/tipograf
+ * (c) 2016 Tiaan du Plessis @tiaanduplessis
+ * @link https://github.com/tiaanduplessis/tipograf
  * @license MIT
  */
  $tipograf-base-font-size:  18;
@@ -14,6 +14,7 @@ $tipograf-header-font-family: medium-content-sans-serif-font,"Lucida Grande","Lu
 $tipograf-header-font-weight: 700;
 $tipograf-header-scale: 1.67;
 $tipograf-leading-space: $tipograf-base-line-height * 1rem;
+$tipograf-max-line-length: 36; //disable with using false
 
 html {
 	font-family: $tipograf-base-font-family;
@@ -97,4 +98,10 @@ blockquote {
 
 code {
   vertical-align: bottom;
+}
+
+@if(type-of($tipograf-max-line-length) == number) {
+	p, ul, ol, dl {
+		max-width:$tipograf-max-line-length * 1em;
+	}
 }

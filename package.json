@@ -23,7 +23,7 @@
   "files": [
     "dist"
   ],
-  "author": "Tiaan du Plessis @mightyCrow",
+  "author": "Tiaan du Plessis @tiaanduplessis",
   "contributors": [
     {
       "name": "Kasper Andersson",
@@ -31,7 +31,7 @@
       "url": "http://syvogfirs.dk"
     }
   ],
-  "homepage": "https://github.com/mightyCrow/tipograf",
+  "homepage": "https://github.com/tiaanduplessis/tipograf",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.16.0",

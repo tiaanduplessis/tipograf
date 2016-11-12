@@ -1,16 +1,16 @@
 /**
  * tipograf - Lightweight CSS typography base for your next project
  * @version v1.0.2
- * (c) 2016 Tiaan du Plessis @mightyCrow
- * @link https://github.com/mightyCrow/tipograf
+ * (c) 2016 Tiaan du Plessis @tiaanduplessis
+ * @link https://github.com/tiaanduplessis/tipograf
  * @license MIT
  */
  html {
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 112.5%;
+  color: rgba(0, 0, 0, .8);
   font-weight: 400;
   font-style: normal;
-  color: rgba(0, 0, 0, .8);
+  font-size: 112.5%;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: auto;
@@ -19,60 +19,61 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.002em;
-  line-height: 1.2;
   margin-bottom: 0;
+  letter-spacing: -0.002em;
+  font-weight: 700;
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 75.149px;
-  font-size: 4.175rem;
   margin-top: 54px;
   margin-top: 3rem;
+  font-size: 75.149px;
+  font-size: 4.175rem;
 }
 
 h2 {
-  font-size: 66.132px;
-  font-size: 3.674rem;
   margin-top: 48.6px;
   margin-top: 2.7rem;
+  font-size: 66.132px;
+  font-size: 3.674rem;
 }
 
 h3 {
-  font-size: 51.102px;
-  font-size: 2.839rem;
   margin-top: 43.199px;
   margin-top: 2.4rem;
+  font-size: 51.102px;
+  font-size: 2.839rem;
 }
 
 h4 {
-  font-size: 45.089px;
-  font-size: 2.505rem;
   margin-top: 37.8px;
   margin-top: 2.1rem;
+  font-size: 45.089px;
+  font-size: 2.505rem;
 }
 
 h5 {
-  font-size: 39.077px;
-  font-size: 2.171rem;
   margin-top: 29.7px;
   margin-top: 1.65rem;
+  font-size: 39.077px;
+  font-size: 2.171rem;
 }
 
 h6 {
-  font-size: 30.06px;
-  font-size: 1.67rem;
   margin-top: 29.7px;
   margin-top: 1.65rem;
+  font-size: 30.06px;
+  font-size: 1.67rem;
 }
 
 p {
-  letter-spacing: -.004em;
   margin-top: 27px;
   margin-top: 1.5rem;
   margin-bottom: 0;
+  max-width: 36em;
+  letter-spacing: -.004em;
 }
 
 ul, ol {
