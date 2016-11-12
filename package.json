@@ -1,6 +1,6 @@
 {
   "name": "tipograf",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight CSS typography base for your next project",
   "main": "dist/tipograf.css",
   "scripts": {
