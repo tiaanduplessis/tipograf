@@ -34,7 +34,7 @@
   "homepage": "https://github.com/tiaanduplessis/tipograf",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.16.0",
+    "browser-sync": "^2.18.1",
     "cssnano": "^3.7.5",
     "del": "^2.2.2",
     "gh-pages": "^0.11.0",
