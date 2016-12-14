@@ -3,7 +3,7 @@
 </p>
 
 #  :book: tipograf
-[![GitHub version](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf.svg)](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf) [![npm version](https://badge.fury.io/js/tipograf.svg)](https://badge.fury.io/js/tipograf) [![Bower version](https://badge.fury.io/bo/tipograf.svg)](https://badge.fury.io/bo/tipograf) [![Build Status](https://travis-ci.org/tiaanduplessis/tipograf.svg?branch=master)](https://travis-ci.org/tiaanduplessis/tipograf)
+[![GitHub version](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf.svg)](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf) [![npm version](https://badge.fury.io/js/tipograf.svg)](https://badge.fury.io/js/tipograf) [![Bower version](https://badge.fury.io/bo/tipograf.svg)](https://badge.fury.io/bo/tipograf) [![Build Status](https://travis-ci.org/tiaanduplessis/tipograf.svg?branch=master)](https://travis-ci.org/tiaanduplessis/tipograf) [![CDNJS](https://img.shields.io/cdnjs/v/tipograf.svg)](https://cdnjs.com/libraries/tipograf)
 
 **tipograf** is a Lightweight typography base. It is available in pure CSS or Less.  Heavily inspired by [Medium](https://medium.com/), it tries to **enforce good vertical rhythm**.
 
