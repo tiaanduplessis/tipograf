@@ -5,10 +5,16 @@
   "authors": [
     "Tiaan du Plessis @tiaanduplessis"
   ],
-  "contributors":  [
-    { "name" : "Kasper Andersson"
-    , "email" : "hello@syvogfirs.dk"
-    , "url" : "http://syvogfirs.dk"
+  "contributors": [
+    {
+      "name": "Tiaan du Plessis",
+      "email": "tiaanduplessis@hotmail.com",
+      "url": "http://tiaanduplessis.co.za/"
+    },
+    {
+      "name": "Kasper Andersson",
+      "email": "hello@syvogfirs.dk",
+      "url": "http://syvogfirs.dk"
     }
   ],
   "license": "MIT",

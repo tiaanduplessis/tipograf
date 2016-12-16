@@ -1,6 +1,6 @@
 {
   "name": "tipograf",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Lightweight CSS typography base for your next project",
   "main": "dist/tipograf.css",
   "scripts": {
@@ -11,7 +11,8 @@
     "start": "gulp demo",
     "dev": "gulp",
     "size": "gulp size",
-    "deploy": "gulp build && gh-pages -d demo"
+    "deploy": "gulp build && gh-pages -d demo",
+    "lint": "standard --fix"
   },
   "keywords": [
     "tipograf",
@@ -23,8 +24,13 @@
   "files": [
     "dist"
   ],
-  "author": "Tiaan du Plessis @tiaanduplessis",
+  "author": "Tiaan du Plessis",
   "contributors": [
+    {
+      "name": "Tiaan du Plessis",
+      "email": "tiaanduplessis@hotmail.com",
+      "url": "http://tiaanduplessis.co.za/"
+    },
     {
       "name": "Kasper Andersson",
       "email": "hello@syvogfirs.dk",
@@ -49,6 +55,7 @@
     "gulp-size": "^2.1.0",
     "gulp-stylus": "^2.5.0",
     "opener": "^1.4.2",
-    "postcss-cssnext": "^2.8.0"
+    "postcss-cssnext": "^2.8.0",
+    "standard": "^8.6.0"
   }
 }
