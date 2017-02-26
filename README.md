@@ -1,18 +1,61 @@
 <p align="center">
 	<a href=""><img width="100%" src="media/header.png" alt="tipograf"></a>
 </p>
+<br>
+<div align="center">
+     <a href="https://npmjs.org/package/tipograf">
+      <img src="https://img.shields.io/npm/v/tipograf.svg?style=flat-square" alt="NPM version" />
+    </a>
+    <a href="https://npmjs.org/package/tipograf">
+    <img src="https://img.shields.io/npm/dm/tipograf.svg?style=flat-square" alt="Downloads" />
+    </a>
+    <a href="https://github.com/feross/standard">
+      <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="Standard" />
+    </a>
+    <a href="https://travis-ci.org/tiaanduplessis/tipograf">
+      <img src="https://img.shields.io/travis/tiaanduplessis/tipograf/master.svg?style=flat-square" alt="Travis Build" />
+    </a>
+    <a href="https://github.com/RichardLitt/standard-readme)">
+      <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
+    </a>
+    <a href="https://badge.fury.io/gh/tiaanduplessis%2Ftipograf">
+      <img src="https://badge.fury.io/gh/tiaanduplessis%2Ftipograf.svg?style=flat-square" alt="GitHub version" />
+    </a>
+    <a href="https://badge.fury.io/js/tipograf">
+      <img src="https://badge.fury.io/bo/tipograf.svg?style=flat-square" alt="Bower version" />
+    </a>
+    <a href="https://cdnjs.com/libraries/tipograf">
+      <img src="https://img.shields.io/cdnjs/v/tipograf.svg?style=flat-square" alt="CDNJS" />
+    </a>
+</div>
+<br>
+<div align="center">
+  Built with ❤︎ by <a href="tiaanduplessis.co.za">Tiaan</a> and <a href="https://github.com/tiaanduplessis/tipograf/graphs/contributors">contributors</a>
+</div>
 
-#  :book: tipograf
-[![GitHub version](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf.svg)](https://badge.fury.io/gh/tiaanduplessis%2Ftipograf) [![npm version](https://badge.fury.io/js/tipograf.svg)](https://badge.fury.io/js/tipograf) [![Bower version](https://badge.fury.io/bo/tipograf.svg)](https://badge.fury.io/bo/tipograf) [![Build Status](https://travis-ci.org/tiaanduplessis/tipograf.svg?branch=master)](https://travis-ci.org/tiaanduplessis/tipograf) [![CDNJS](https://img.shields.io/cdnjs/v/tipograf.svg)](https://cdnjs.com/libraries/tipograf) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+<h2>Table of Contents</h2>
+<details>
+  <summary>Table of Contents</summary>
+	<li><a href="#about">About</a></li>
+  <li><a href="#highlights">Highlights</a></li>
+  <li><a href="#install">Install</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#demo">Demo</a></li>
+  <li><a href="#contribute">Contribute</a></li>
+  <li><a href="#license">License</a></li>
+</details>
 
-**tipograf** is a Lightweight typography base. It is available in pure CSS or Less.  Heavily inspired by [Medium](https://medium.com/), it tries to **enforce good vertical rhythm**.
+## About
 
-## :scream: Highlights
+**tipograf** is a Lightweight typography base.  Heavily inspired by [Medium](https://medium.com/), it tries to **enforce good vertical rhythm**. It's available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](http://lesscss.org/) or [SCSS](http://sass-lang.com/).
+
+## Highlights
 - Written entirely in relative units.
 - Highly customizable.
 - Lightweight(**minified version being just 680 bytes when gzipped**)
 
 ## Install
+
 **Install with cdn**
 ```html
 <link rel="stylesheet" href="https://unpkg.com/tipograf/dist/tipograf.css">
@@ -44,8 +87,12 @@ $ yarn add tipograf
 ## Demo
 Check out the demo [here](https://tiaanduplessis.github.io/tipograf/).
 
-## Contributing
-All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
+## Contribute
+
+Contributions are welcome. Please open up an issue or create PR if you would like to help out.
+
+Note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
-Created with ♥ by [Tiaan du Plessis](https://github.com/tiaanduplessis). Licensed under the MIT License.
+
+Licensed under the MIT License.
