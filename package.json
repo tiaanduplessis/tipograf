@@ -56,6 +56,6 @@
     "gulp-stylus": "^2.5.0",
     "opener": "^1.4.2",
     "postcss-cssnext": "^2.8.0",
-    "standard": "^8.6.0"
+    "standard": "^9.0.0"
   }
 }
