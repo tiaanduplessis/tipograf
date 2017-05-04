@@ -27,6 +27,27 @@
     <a href="https://cdnjs.com/libraries/tipograf">
       <img src="https://img.shields.io/cdnjs/v/tipograf.svg?style=flat-square" alt="CDNJS" />
     </a>
+    <a href="https://github.com/tiaanduplessis/tipograf/blob/master/LICENSE">
+    <img src="https://img.shields.io/npm/l/tipograf.svg?style=flat-square" alt="License" />
+  </a>
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
+  </a>
+  <a href="https://www.paypal.me/tiaanduplessis/1">
+    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
+  </a>
+</div>
+<br>
+<div align="center">
+  <a href="https://github.com/tiaanduplessis/tipograf/watchers">
+    <img src="https://img.shields.io/github/watchers/tiaanduplessis/tipograf.svg?style=social" alt="Github Watch Badge" />
+  </a>
+  <a href="https://github.com/tiaanduplessis/tipograf/stargazers">
+    <img src="https://img.shields.io/github/stars/tiaanduplessis/tipograf.svg?style=social" alt="Github Star Badge" />
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20tipograf!%20https://github.com/tiaanduplessis/tipograf%20%F0%9F%91%8D">
+    <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/tipograf.svg?style=social" alt="Tweet" />
+  </a>
 </div>
 <br>
 <div align="center">
@@ -52,7 +73,7 @@
 ## Highlights
 - Written entirely in relative units.
 - Highly customizable.
-- Lightweight(**minified version being just 680 bytes when gzipped**)
+- Lightweight(**minified version being just 705 bytes when gzipped**)
 
 ## Install
 
