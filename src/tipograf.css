@@ -1,12 +1,13 @@
 :root {
-  --base-font-size: 18;
+  --base-font-size: 21;
   --base-font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-  --base-line-height: 1.5;
+  --base-header-letter-spacing: -.028em;
+  --base-line-height: 1.58;
   --base-font-weight: 400;
   --base-letter-spacing: -.004em;
   --header-font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   --header-font-weight: 700;
-  --header-scale: 1.67;
+  --header-scale: 1.618;
   --leading-space: calc(var(--base-line-height) * 1rem);
   --max-line-length: 36em;
 }
@@ -28,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--header-font-weight);
   font-family: var(--header-font-family);
   line-height: calc(.8 * var(--base-line-height));
+  letter-spacing: var(--base-letter-spacing);
 }
 
 h1 {
@@ -63,14 +65,13 @@ h6 {
 p {
   margin-top: var(--leading-space);
   margin-bottom: 0;
-  max-width:var(--max-line-length);
+  max-width: var(--max-line-length);
   letter-spacing: var(--base-letter-spacing);
 }
 
 ul, ol {
   margin-top: var(--leading-space);
   margin-bottom: var(--leading-space);
-
   & ul, & ol {
     margin-top: 0;
     margin-bottom: 0;
@@ -81,7 +82,6 @@ table {
   margin-top: var(--leading-space);
   border-spacing: 0;
   border-collapse: collapse;
-
   & td, & th {
     padding: 0;
   }
