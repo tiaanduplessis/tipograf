@@ -68,6 +68,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/tipograf.svg)](https://greenkeeper.io/)
+
 **tipograf** is a Lightweight typography base.  Heavily inspired by [Medium](https://medium.com/), it tries to **enforce good vertical rhythm**. It's available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](http://lesscss.org/) or [SCSS](http://sass-lang.com/).
 
 ## Highlights
